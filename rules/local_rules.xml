@@ -1,0 +1,16 @@
+<group name="windows,windows_security,authentication_failed,">
+
+  <rule id="100101" level="12" frequency="5" timeframe="60">
+    <if_matched_sid>60122</if_matched_sid>
+    <same_field>win.eventdata.targetUserName</same_field>
+
+    <description>Custom Detection: Multiple failed Windows logons for the same account within 60 seconds</description>
+
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+
+    <group>authentication_failed,brute_force,custom_detection,</group>
+  </rule>
+
+</group>

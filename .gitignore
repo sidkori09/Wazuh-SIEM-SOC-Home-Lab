@@ -1,0 +1,21 @@
+# Secrets / certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+.env
+*.secret
+*password*
+*token*
+
+# Logs / exports
+*.log
+alerts.json
+archives.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
